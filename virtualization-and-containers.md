@@ -1,3 +1,5 @@
+# Containers
+
 This week, you will learn to evaluate the correct workflows for virtual machines and containers and how to choose the appropriate solution for the task at end. You will also learn about the powerful container management service: Kubernetes. You will apply this knowledge to create a containerized web service and deploy it to a managed container service.
 
 **Learning Objectives**
@@ -35,3 +37,24 @@ RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 ```
 
+# Kubernetes
+
+Container orchestration:
+  - High availability architecture
+  - Auto-scaling
+  - Rich Ecosystem
+  - Service Discovery
+  - Container health management
+  - Secrets and configuration management
+
+Ability to set up auto-scaling via Horizontal Pod Autoscale. It works by HPA control loop looking at different health metrics for the
+system, like CPU and Memory.
+
+**Kebernetes Hierarchy:** Inside a Kubernet cluster you can have multiple nodes and each node can have different Pods.
+This pods have different IPs and get its own collection of Containers.
+
+**Deploy App on GKE**
+
+```
+gcloud container clusters create cloud-kubernetes
+```
